@@ -5,4 +5,5 @@ header {
   flex-flow: column;
   align-items: center;
   background-color: darkorange;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }

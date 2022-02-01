@@ -33,3 +33,21 @@ body {
   flex-flow: column;
   margin: 0 5%;
 }
+
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.new-tweet > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-tweet > form > textarea {
+    background: transparent;
+    border-width: initial;
+    border-style: none none solid;
+    border-color: initial;
+}

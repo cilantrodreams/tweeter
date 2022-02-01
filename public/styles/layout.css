@@ -51,3 +51,16 @@ body {
     border-style: none none solid;
     border-color: initial;
 }
+
+.new-tweet > form > div {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+  margin: 0.5em 0;
+}
+
+.new-tweet > form > div > button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 0 0.5em;
+}

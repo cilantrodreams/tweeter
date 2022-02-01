@@ -26,4 +26,10 @@ body {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
- }
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  margin: 0 5%;
+}

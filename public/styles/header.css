@@ -1,0 +1,8 @@
+header {
+  display:flex;
+  margin-top: 120px;
+  min-height: 400px;
+  flex-flow: column;
+  align-items: center;
+  background-color: darkorange;
+}

@@ -72,10 +72,6 @@ body {
   padding: .5em;
 }
 
-.tweet:hover {
-  box-shadow: .25em .25em lightgrey;
-}
-
 .tweet header {
   display: flex;
   justify-content: space-between;
@@ -114,4 +110,12 @@ body {
   font-size: small;
   margin-left: 0.5em;
   color: #4056A1;
+}
+
+.tweet:hover {
+  box-shadow: .25em .25em lightgrey;
+}
+
+.tweet footer i:hover {
+  color: orange;
 }

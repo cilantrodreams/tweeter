@@ -82,6 +82,10 @@ body {
   margin: 0;
 }
 
+.tweet .handle {
+  color: lightgrey;
+}
+
 .tweet div {
   border-bottom: solid;
   padding: 1em;

@@ -72,6 +72,10 @@ body {
   padding: .5em;
 }
 
+.tweet:hover {
+  box-shadow: .25em .25em lightgrey;
+}
+
 .tweet header {
   display: flex;
   justify-content: space-between;

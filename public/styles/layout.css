@@ -64,3 +64,13 @@ body {
   color: #FFFFFF;
   padding: 0 0.5em;
 }
+
+.tweet {
+  border: solid;
+  padding: .5em;
+}
+
+.tweet header {
+  display: flex;
+  justify-content: space-between;
+}

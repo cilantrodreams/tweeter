@@ -65,6 +65,8 @@ body {
   padding: 0 0.5em;
 }
 
+/* Tweet container style */
+
 .tweet {
   border: solid;
   padding: .5em;
@@ -73,4 +75,27 @@ body {
 .tweet header {
   display: flex;
   justify-content: space-between;
+  padding: .5em;
+}
+
+.tweet header p {
+  margin: 0;
+}
+
+.tweet div {
+  border-bottom: solid;
+  padding: 1em;
+}
+
+.tweet div p {
+  font-weight: 600;
+}
+
+.tweet footer {
+  padding: 0.5em 1em;
+}
+
+.tweet footer p {
+  margin: 0;
+  font-size: small;
 }

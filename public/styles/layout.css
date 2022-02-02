@@ -92,10 +92,17 @@ body {
 }
 
 .tweet footer {
+  display: flex;
   padding: 0.5em 1em;
 }
 
 .tweet footer p {
+  flex: 1;
   margin: 0;
   font-size: small;
+}
+
+.tweet footer i {
+  font-size: small;
+  margin-left: 0.5em;
 }

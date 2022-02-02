@@ -1,7 +1,8 @@
 $(document).ready(function() {
-  console.log('ground control to major toooooom');
+
   const textInput = $("#tweet-text");
-  textInput.keypress(function() {
-    console.log(textInput);
+  textInput.keyup(function() {
+    console.log(140 - $(this).val().length);
   });
+
 });

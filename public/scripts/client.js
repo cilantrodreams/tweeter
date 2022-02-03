@@ -49,7 +49,14 @@ $(document).ready(() => {
   // handler for tweet submit 
   $('section.new-tweet > form').submit(function(event) {
     event.preventDefault();
+    console.log(this);
     const data = $(this).serialize();
+    console.log(data);
+
+    if (data === 'text=' || data === null) {
+      alert(`Say what's on your mind!`);
+      return;
+    }
     $.post('/tweets/', data);
   });
 

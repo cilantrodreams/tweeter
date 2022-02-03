@@ -16,14 +16,23 @@ $(document).ready(() => {
     const $handle = $('<p>').text(`${tweetData.user.handle}`);
     $header.append($avatars, $name, $handle);
 
-    // build tweet text
+    // build content
     const $content = $('<div>');
     const $text = $('<p>').text(`${tweetData.content.text}`);
     $content.append($text);
 
+    // build footer
+    const $footer = $('<footer>');
+    const $createdAt = $('<p>').text(`${tweetData.created_at}`);
+    const $flag = $('<i>').addClass('fa-solid fa-flag');
+    const $retweet = $('<i>').addClass('fa-solid fa-retweet');
+    const $like = $('<i>').addClass('fa-solid fa-heart');
+    $footer.append($createdAt, $flag, $retweet, $like);
+
     // build tweet
     const $tweet = $('<article>').addClass('tweetData');
-    $tweet.append($header, $content);
+    $tweet.append($header, $content, $footer);
+
 
     return $tweet;
 

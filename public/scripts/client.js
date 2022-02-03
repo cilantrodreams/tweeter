@@ -46,6 +46,11 @@ $(document).ready(() => {
     }
   }
 
+  // handler for tweet submit 
+  $('section.new-tweet > form').submit(function(event) {
+    event.preventDefault();
+    console.log('submitted tweet!');
+  });
 
   // test code
   const tweetData = {

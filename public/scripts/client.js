@@ -49,10 +49,8 @@ $(document).ready(() => {
   // handler for tweet submit 
   $('section.new-tweet > form').submit(function(event) {
     event.preventDefault();
-    console.log('submitted tweet!');
-    console.log($(this));
     const data = $(this).serialize();
-    console.log(data);
+    $.post('/tweets/', data);
   });
 
   // test code

@@ -57,7 +57,11 @@ $(document).ready(() => {
       return;
     }
 
-    console.log($(this).children('textarea').val());
+    // check if tweet is too long
+    if (tweetText.length > 140) {
+      alert(`Whoa, that's too many characters!`);
+      return;
+    }
 
     const data = $(this).serialize();
     $.post('/tweets/', data);

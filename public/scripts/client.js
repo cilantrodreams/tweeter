@@ -23,7 +23,7 @@ $(document).ready(() => {
 
     // build footer
     const $footer = $('<footer>');
-    const $createdAt = $('<p>').text(`${tweetData.created_at}`);
+    const $createdAt = $('<p>').text(`${timeago.format(tweetData.created_at)}`);
     const $flag = $('<i>').addClass('fa-solid fa-flag');
     const $retweet = $('<i>').addClass('fa-solid fa-retweet');
     const $like = $('<i>').addClass('fa-solid fa-heart');

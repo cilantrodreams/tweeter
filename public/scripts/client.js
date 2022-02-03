@@ -33,10 +33,15 @@ $(document).ready(() => {
     const $tweet = $('<article>').addClass('tweet');
     $tweet.append($header, $content, $footer);
 
-
     return $tweet;
 
   }
+
+  // takes an array of tweet objects and appends them to the tweet container
+  const renderTweets = function(tweets) {
+    // loop through tweets
+  }
+
 
   // test code
   const tweetData = {

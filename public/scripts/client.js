@@ -53,16 +53,20 @@ $(document).ready(() => {
   $('section.new-tweet > form').submit(function(event) {
     event.preventDefault();
     const tweetText = $(this).children('textarea').val();
+    const tweetError = $(this).siblings('.error');
+    console.log(tweetError.get(0));
 
     // Check for empty tweet content
     if (tweetText === '' || tweetText === null) {
-      alert(`Say what's on your mind!`);
+      tweetError.text("You gotta write something! Say what's on your mind!")
+        .slideDown('slow');
       return;
     }
 
     // check if tweet is too long
     if (tweetText.length > 140) {
-      alert(`Whoa, that's too many characters!`);
+      tweetError.text("You wrote too much! That's more than 140 characters!")
+        .slideDown('slow');
       return;
     }
 

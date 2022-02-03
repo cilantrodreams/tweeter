@@ -7,13 +7,13 @@
 $(document).ready(() => {
 
   // takes tweet object and returns a tweet <article> element containing tweet HTML structure
-  const createTweetElement = (tweet) => {
+  const createTweetElement = (tweetData) => {
 
     // build header
     const $header = $('<header>');
     const $avatars = $('<img>').attr('src', `${tweetData.user.avatars}`);
     const $name = $('<p>').text(`${tweetData.user.name}`);
-    const $handle = $('<p>').text(`${tweetData.user.handle}`);
+    const $handle = $('<p>').text(`${tweetData.user.handle}`).addClass('handle');
     $header.append($avatars, $name, $handle);
 
     // build content
@@ -30,7 +30,7 @@ $(document).ready(() => {
     $footer.append($createdAt, $flag, $retweet, $like);
 
     // build tweet
-    const $tweet = $('<article>').addClass('tweetData');
+    const $tweet = $('<article>').addClass('tweet');
     $tweet.append($header, $content, $footer);
 
 
@@ -53,7 +53,7 @@ $(document).ready(() => {
 
   const $tweet = createTweetElement(tweetData);
   console.log('tweet:', $tweet.get(0));
-
+  $('.container').append($tweet);
 });
 
 {/* <article class="tweet">

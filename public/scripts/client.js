@@ -16,9 +16,14 @@ $(document).ready(() => {
     const $handle = $('<p>').text(`${tweetData.user.handle}`);
     $header.append($avatars, $name, $handle);
 
+    // build tweet text
+    const $content = $('<div>');
+    const $text = $('<p>').text(`${tweetData.content.text}`);
+    $content.append($text);
+
     // build tweet
     const $tweet = $('<article>').addClass('tweetData');
-    $tweet.append($header);
+    $tweet.append($header, $content);
 
     return $tweet;
 

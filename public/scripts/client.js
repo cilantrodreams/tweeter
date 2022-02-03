@@ -49,14 +49,17 @@ $(document).ready(() => {
   // handler for tweet submit 
   $('section.new-tweet > form').submit(function(event) {
     event.preventDefault();
-    console.log(this);
-    const data = $(this).serialize();
-    console.log(data);
+    const tweetText = $(this).children('textarea').val();
 
-    if (data === 'text=' || data === null) {
+    // Check for empty tweet content
+    if (tweetText === '' || tweetText === null) {
       alert(`Say what's on your mind!`);
       return;
     }
+
+    console.log($(this).children('textarea').val());
+
+    const data = $(this).serialize();
     $.post('/tweets/', data);
   });
 

@@ -53,6 +53,15 @@ $(document).ready(() => {
     $.post('/tweets/', data);
   });
 
+  // function to fetch tweets from /tweets route
+  const loadTweets = function() {
+    $.get('/tweets', (data) => {
+      console.log(data);
+    });
+  };
+
+  loadTweets();
+
   // test code
   const tweetData = {
     "user": {

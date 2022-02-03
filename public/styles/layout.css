@@ -119,3 +119,14 @@ body {
 .tweet footer i:hover {
   color: orange;
 }
+
+/* Validation Error Style */
+
+.error {
+  border: solid;
+  border-color: red;
+  padding: .5em;
+  margin: 1em 0;
+  color: red;
+  font-weight: 300;
+}

@@ -54,7 +54,7 @@ $(document).ready(() => {
     event.preventDefault();
     const tweetText = $(this).children('textarea').val();
     const tweetError = $(this).siblings('.error');
-    console.log(tweetError.get(0));
+    tweetError.hide();
 
     // Check for empty tweet content
     if (tweetText === '' || tweetText === null) {

@@ -64,7 +64,10 @@ $(document).ready(() => {
     }
 
     const data = $(this).serialize();
-    $.post('/tweets/', data);
+    $.post('/tweets/', data)
+      .then(() => {
+        loadTweets();
+      });
   });
 
   // function to fetch tweets from /tweets route

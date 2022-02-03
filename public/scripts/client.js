@@ -39,6 +39,9 @@ $(document).ready(() => {
 
   // takes an array of tweet objects and appends them to the tweet container
   const renderTweets = function(tweets) {
+    // clear tweet container
+    $('.tweet').remove();
+
     // loop through tweets
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);

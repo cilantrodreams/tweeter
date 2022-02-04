@@ -138,5 +138,16 @@ body {
 /* layout breakpoints */
 
 @media only screen and (min-width: 1024px) {
-
+  .container {
+    justify-content: flex-end;
+  }
+  .profile {
+    width: 45%;
+  }
+  .new-tweet {
+    width: 55%;
+  }
+  .tweet {
+    width: 55%;
+  }
 }

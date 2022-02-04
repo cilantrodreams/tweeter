@@ -40,7 +40,8 @@ body {
   display: flex;
   flex-direction: column;
   font-weight: 600;
-  width: 100%
+  width: 100%;
+  justify-content: center;
 }
 
 .new-tweet > form {

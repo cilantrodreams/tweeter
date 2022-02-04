@@ -1,6 +1,6 @@
 .profile {
   display: flex;
-  margin-top: 120px;
+  padding-top: 120px;
   min-height: 400px;
   width: 100%;
   flex-direction: column;

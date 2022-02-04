@@ -2,9 +2,11 @@
   display: flex;
   padding-top: 120px;
   min-height: 400px;
-  width: 100%;
+  width: 120%;
   flex-direction: column;
   align-items: center;
   background-color: darkorange;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  margin-left: -6%;
+  margin-right: -6%;
 }

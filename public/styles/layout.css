@@ -48,6 +48,9 @@ body {
   flex-direction: column;
 }
 
+.new-tweet > form > label {
+  position: fixed;
+} 
 .new-tweet > form > textarea {
     background: transparent;
     border-width: initial;

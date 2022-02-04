@@ -73,7 +73,7 @@ body {
 .tweet {
   border: solid;
   padding: .5em;
-  width: 100%
+  width: 100%;
 }
 
 .tweet header {
@@ -138,14 +138,20 @@ body {
 /* layout breakpoints */
 
 @media only screen and (min-width: 1024px) {
+  .navbar {
+    background-color: #4056A1;
+  }
   .container {
     justify-content: flex-end;
   }
   .profile {
-    width: 45%;
+    width: 40%;
+    margin-top: 240px;
+    margin-right: 5%;
   }
   .new-tweet {
     width: 55%;
+    margin-top: 240px;
   }
   .tweet {
     width: 55%;

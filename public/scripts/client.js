@@ -55,19 +55,19 @@ $(document).ready(() => {
   // handler for tweet submit 
   $('section.new-tweet > form').submit(function(event) {
     event.preventDefault();
-    const tweetText = $(this).children('textarea').val();
+    const tweetText = $(this).children('textarea');
     const tweetError = $(this).siblings('.error');
     tweetError.hide();
 
     // Check for empty tweet content
-    if (tweetText === '' || tweetText === null) {
+    if (tweetText.val() === '' || tweetText.val() === null) {
       tweetError.text("You gotta write something! Say what's on your mind!")
         .slideDown('slow');
       return;
     }
 
     // check if tweet is too long
-    if (tweetText.length > 140) {
+    if (tweetText.val().length > 140) {
       tweetError.text("You wrote too much! That's more than 140 characters!")
         .slideDown('slow');
       return;
@@ -76,6 +76,7 @@ $(document).ready(() => {
     const data = $(this).serialize();
     $.post('/tweets/', data)
       .then(() => {
+        tweetText.val("");
         loadTweets();
       });
   });

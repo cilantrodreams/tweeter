@@ -80,16 +80,19 @@ body {
 
 .tweet header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: .5em;
+  align-items: center;
 }
 
 .tweet header p {
   margin: 0;
+  padding-left: 1em;
 }
 
 .tweet .handle {
   color: lightgrey;
+  margin-left: auto;
 }
 
 .tweet div {

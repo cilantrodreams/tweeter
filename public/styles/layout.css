@@ -75,6 +75,7 @@ body {
   border: solid;
   padding: .5em;
   width: 100%;
+  margin-bottom: 1em;
 }
 
 .tweet header {

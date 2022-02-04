@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   min-height: 120px;
-  background-color: #4056A1;
+  background-color: transparent;
   color: #FFFFFF;
   padding: 0em 1.5em;
   justify-content: space-between;

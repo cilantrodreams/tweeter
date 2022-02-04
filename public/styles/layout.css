@@ -40,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   font-weight: 600;
+  width: 100%
 }
 
 .new-tweet > form {
@@ -72,6 +73,7 @@ body {
 .tweet {
   border: solid;
   padding: .5em;
+  width: 100%
 }
 
 .tweet header {

@@ -35,7 +35,7 @@ $(document).ready(() => {
 
     return $tweet;
 
-  }
+  };
 
   // takes an array of tweet objects and appends them to the tweet container
   const renderTweets = function(tweets) {
@@ -50,9 +50,9 @@ $(document).ready(() => {
       const $tweet = createTweetElement(tweet);
       insertPoint.after($tweet);
     }
-  }
+  };
 
-  // handler for tweet submit 
+  // handler for tweet submit
   $('section.new-tweet > form').submit(function(event) {
     event.preventDefault();
     const tweetText = $(this).children('textarea');

@@ -45,6 +45,10 @@ $(document).ready(() => {
     // select sibling to insert tweets after
     const insertPoint = $('.new-tweet');
 
+    // clear tweet counter
+    const counter = insertPoint.find('.counter');
+    counter.text(140);
+
     // loop through tweets
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
